@@ -9,12 +9,6 @@ import {
   Mail, 
 } from 'lucide-react';
 
-const AUTHOR = {
-  name: "Robert Oliveira",
-  role: "Engenheiro de Sistemas | Autor",
-  image: "https://i.postimg.cc/prMvshLr/robert-oliveira-k-GY7ACl-U.png",
-};
-
 export default function App() {
   return (
     <main className="min-h-screen text-brand-muted selection:bg-brand-gold selection:text-brand-dark font-sans overflow-x-hidden bg-brand-dark flex flex-col">
@@ -106,40 +100,6 @@ export default function App() {
                   </div>
                 </div>
              </HolographicCard>
-          </motion.div>
-
-          {/* Enhanced Author Quote Section */}
-          <motion.div 
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.8 }}
-            className="pt-12 text-center border-t border-white/5 mt-16"
-          >
-             <div className="flex flex-col items-center gap-8">
-                {/* Author Image with improved presentation */}
-                <div className="relative group">
-                    <div className="absolute inset-0 bg-brand-gold/20 rounded-full blur-xl group-hover:bg-brand-gold/30 transition-all duration-700 opacity-60"></div>
-                    <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full p-[2px] bg-gradient-to-b from-brand-gold to-transparent shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)]">
-                        <div className="w-full h-full rounded-full overflow-hidden bg-brand-card relative z-10">
-                            <img 
-                                src={AUTHOR.image} 
-                                alt={AUTHOR.name} 
-                                className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" 
-                            />
-                        </div>
-                    </div>
-                </div>
-
-                <div className="space-y-4 max-w-2xl mx-auto px-4">
-                   <p className="text-xl md:text-2xl font-serif italic text-brand-muted/80 leading-relaxed">
-                      "Não é sobre a velocidade com que você sobe a montanha, mas sobre a clareza de saber por que está subindo."
-                   </p>
-                   <div className="flex flex-col items-center gap-1">
-                      <span className="text-brand-gold font-display font-bold tracking-wide uppercase text-sm">{AUTHOR.name}</span>
-                      <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-brand-muted/40">{AUTHOR.role}</span>
-                   </div>
-                </div>
-             </div>
           </motion.div>
 
         </div>
